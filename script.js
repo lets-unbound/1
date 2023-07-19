@@ -3,6 +3,7 @@ const toggleButton = document.getElementById('toggleButton');
 const sectionContent = document.getElementById('sectionContent');
 const c= document.getElementById("canvas")
 const closeButton=document.getElementById("closeButton")
+const pb=document.getElementById("pb")
 
 toggleButton.addEventListener('click', () => {
   if (sectionContent.style.display === 'none') {
@@ -18,6 +19,12 @@ toggleButton.addEventListener('click', () => {
 
 
 closeButton.addEventListener('click',()=>{
+  sectionContent.style.display = 'none';
+  c.style.display="block"
+})
+
+
+pb.addEventListener('click',()=>{
   sectionContent.style.display = 'none';
   c.style.display="block"
 })
